@@ -8,23 +8,23 @@ contract SimpleStorage {
     bytes8 public lala = "working";
 
 //updare nbr with input nbr
-    function updateNbr(uint256 newNbr) public {
-        nbr = newNbr;
+    function updateNbr(uint256 _newNbr) public {
+        nbr = _newNbr;
     }
 //to see what bytes will return
 // pure function can not read from state or env and can not write
     function getBytes() public pure returns (bytes memory, bytes8, bytes32, string memory){
-        bytes memory autoCntBytes = bytes("bytes");
-        bytes8 fixedBytes8 = "bytes";
-        bytes32 fixedBytes32 = "bytes";
+        bytes memory _autoCntBytes = bytes("bytes");
+        bytes8 _fixedBytes8 = "bytes";
+        bytes32 _fixedBytes32 = "bytes";
         // string memory notWorks = newStr; //not working needs to be view
-        string memory str = "bytes";
-        return (autoCntBytes, fixedBytes8, fixedBytes32, str);
+        string memory _str = "bytes";
+        return (_autoCntBytes, _fixedBytes8, _fixedBytes32, _str);
     }
 //updating with global var i can access state bcs view ,method 
     function something() public view returns (bytes8){
-         bytes8 fixedBytes8 = lala;
+         bytes8 _fixedBytes8 = lala;
         //  bytes32 fix32 = newStr;//diff types
-         return (fixedBytes8);
+         return (_fixedBytes8);
     }
 }
