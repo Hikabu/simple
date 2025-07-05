@@ -4,6 +4,15 @@ pragma solidity ^0.8.30; // grater than 30
 contract createAddress{
     address senderAddress = 0xdEADBEeF00000000000000000000000000000000;
     bytes10 myKey = "verySecret";
+    //to unite list
+    struct trxInfo{
+        uint256 day;
+        string month;
+    }
+    //mapping
+    mapping(uint256 => string ) public dayToMonth;
+   //dynamic
+    trxInfo[] public listOfInfo;
     // uint8 public nonce;
     function contractAddress(uint8 nonce) public view returns (address){
         bytes memory rlp;
@@ -49,7 +58,13 @@ contract createAddress{
     function retrieve() public view returns (address){
         return senderAddress;
     }
+    function addInfo(uint256 _day, string calldata _month) public {
+        // trxInfo memory newInfo = trxInfo(_day, _month);
+        listOfInfo.push(trxInfo(_day, _month));
+        dayToMonth[_day] = _month;
+    }
 }
+
 // contract useAddress is createAddress{
 //     function call() public {
 //         contractAddress(nonce);

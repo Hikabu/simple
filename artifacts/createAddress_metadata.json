@@ -8,6 +8,24 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_day",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_month",
+						"type": "string"
+					}
+				],
+				"name": "addInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint8",
 						"name": "nonce",
 						"type": "uint8"
@@ -19,6 +37,49 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "dayToMonth",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "day",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "month",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -66,11 +127,11 @@
 	},
 	"sources": {
 		"functions.sol": {
-			"keccak256": "0x16403efa6f8ea85ead52c6b0fc38f8fdb23a1a8e97f34b63f51aeb4d1d50f0b2",
+			"keccak256": "0xe367a75fcf78010909ae976b680667c702b6e11b2a7812c7c3db579591046264",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://02474693cebc401001767f7bde8fc83a67c03f94f62b6310f2f6f0786eb7fe03",
-				"dweb:/ipfs/QmRjMU4KBQessyTZcSCDnq4mrNaLpsyFLxEo7npnjhK7VN"
+				"bzz-raw://223031a97bfeaec53ce5cf4d21502d6639b2e4b01b504600998a3560811a1b37",
+				"dweb:/ipfs/QmTZz3X9a4giB3Y19wmAHBfjBrgr5A9Eys6GSbCGbUWDth"
 			]
 		}
 	},
