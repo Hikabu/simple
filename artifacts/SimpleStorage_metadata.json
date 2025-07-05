@@ -89,7 +89,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "newNbr",
+						"name": "_newNbr",
 						"type": "uint256"
 					}
 				],
@@ -127,11 +127,11 @@
 	},
 	"sources": {
 		"simpleStorage.sol": {
-			"keccak256": "0x5ef56c0d87c514e86a47fe82378383548a313d1de05d98a58701ced167966376",
+			"keccak256": "0xa4937ae069e6b0e3f79ebed424357bf7f659fa71cca7e406c2dc026845d7daf9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://506eec0c1964a0e0b7f9094f485baaa7a1a8cf7b1558aab542e3a40f10438484",
-				"dweb:/ipfs/QmZmSt42EQognzbTJpZdvahSpZksdDyMkBh5BQsZcDfyfr"
+				"bzz-raw://3cd2b96875647320db29a5559eb12da6ba06da68e1077e4e8e80a243c287fbb5",
+				"dweb:/ipfs/QmapbYVDtvfnR8sig1A99SHanBhWBUuA2y3B6duCJggT8E"
 			]
 		}
 	},

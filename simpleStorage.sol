@@ -7,9 +7,11 @@ contract SimpleStorage {
     string  public newStr = "im string";
     bytes8 public lala = "working";
 
-//updare nbr with input nbr
-    function updateNbr(uint256 _newNbr) public {
-        nbr = _newNbr;
+//updating with global var i can access state bcs view ,method 
+    function something() public view returns (bytes8){
+         bytes8 _fixedBytes8 = lala;
+        //  bytes32 fix32 = newStr;//diff types
+         return (_fixedBytes8);
     }
 //to see what bytes will return
 // pure function can not read from state or env and can not write
@@ -21,10 +23,9 @@ contract SimpleStorage {
         string memory _str = "bytes";
         return (_autoCntBytes, _fixedBytes8, _fixedBytes32, _str);
     }
-//updating with global var i can access state bcs view ,method 
-    function something() public view returns (bytes8){
-         bytes8 _fixedBytes8 = lala;
-        //  bytes32 fix32 = newStr;//diff types
-         return (_fixedBytes8);
+//updare nbr with input nbr
+    function updateNbr(uint256 _newNbr) public {
+        nbr = _newNbr;
+        // something();
     }
 }
