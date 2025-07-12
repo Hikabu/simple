@@ -14,7 +14,7 @@ contract createAddress{
    //dynamic
     trxInfo[] public listOfInfo;
     // uint8 public nonce;
-    function contractAddress(uint8 nonce) public view returns (address){
+    function contractAddress(uint8 nonce) public virtual view returns (address){
         bytes memory rlp;
         //no rlp.encoded function - fackinf with the abi
         if (nonce == 0){
