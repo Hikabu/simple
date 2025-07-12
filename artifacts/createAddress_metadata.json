@@ -114,7 +114,7 @@
 		"compilationTarget": {
 			"functions.sol": "createAddress"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"

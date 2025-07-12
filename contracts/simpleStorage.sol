@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT 
-pragma solidity ^0.8.30; // grater than 30 
+pragma solidity ^0.8.24; // grater than 30 
 
 contract SimpleStorage {
     address metaMask = 0x0790248b39886759cA52dfCf44801E5AC0414c4f;
@@ -27,5 +27,8 @@ contract SimpleStorage {
     function updateNbr(uint256 _newNbr) public {
         nbr = _newNbr;
         // something();
+    }
+    function retrieve() public view returns (uint256){
+        return nbr;
     }
 }
